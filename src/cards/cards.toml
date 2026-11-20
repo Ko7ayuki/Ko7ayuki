@@ -1,0 +1,81 @@
+out = "../../assets/cards"
+asset_url = "/assets/cards"
+
+[display]
+social = "24%"
+project = "50%"
+
+# [theme.dark]
+# bg = "#0d1117"
+
+[[social]]
+id = "x"
+icon = "x"
+label = "X"
+handle = "@Ko7ayuki"
+url = "https://x.com/Ko7ayuki"
+
+[[social]]
+id = "discord"
+icon = "discord"
+label = "Discord"
+handle = "@Konayukiw"
+url = "https://konayuki.xyz/"
+
+[[social]]
+id = "telegram"
+icon = "telegram"
+label = "Telegram"
+handle = "@Konayukiw"
+url = "https://t.me/Konayukiw"
+
+[[project]]
+id = "flect"
+name = "Flect"
+repo = "Ko7ayuki/Flect"
+url = "https://github.com/Ko7ayuki/Flect"
+logo = "logos/flect.png"
+description = "Right-click any file or folder in Windows Explorer\nto convert, compress, resize, OCR and more."
+language = "C#"
+chips = ["Windows 10 / 11", "Free", "Apache-2.0"]
+accent = ["#00c7f9", "#0fe29d"]
+
+[[interest]]
+id = "interests"
+groups = [
+  { label = "Languages", items = ["C#", "Java", "Rust"] },
+  { label = "Games", items = ["原神"] },
+  { label = "LLM", items = ["Grok", "badtheorylabs"] },
+]
+
+[[favorite]]
+id = "anxious-love"
+kind = "Song"
+title = "Anxious Love"
+subtitle = "999dobby"
+image = "covers/anxious-love.png"
+url = "https://www.youtube.com/watch?v=VerIQQtPGUM"
+
+[[favorite]]
+id = "life"
+kind = "Song"
+title = "Life"
+subtitle = "Sugar Goose"
+image = "covers/20escape.png"
+url = "https://www.youtube.com/watch?v=QsSKENQcBHo"
+
+[[favorite]]
+id = "angel-wing"
+kind = "Song"
+title = "Angel Wing"
+subtitle = "Sugar Goose"
+image = "covers/20escape.png"
+url = "https://www.youtube.com/watch?v=7SXeQ_34l2Q"
+
+[[favorite]]
+id = "for-you"
+kind = "Song"
+title = "for you..."
+subtitle = "Lil Yeek"
+image = "covers/for-you.png"
+url = "https://www.youtube.com/watch?v=o3WlSH3_U10"

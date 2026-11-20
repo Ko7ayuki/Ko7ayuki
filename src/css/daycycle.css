@@ -1,0 +1,24 @@
+:root {
+     --hour: 75vh;
+}
+html {
+     background: #6E84A4;
+}
+body {
+     margin: 0;
+}
+#sky {
+     position: fixed;
+     top: 0;
+     left: 0;
+     z-index: 0;
+     display: block;
+     width: 100%;
+     height: 100vh;
+     height: 100lvh;
+}
+#day {
+    position: relative;
+    z-index: 1;
+    height: calc(var(--hour) * 24 * var(--days, 1) + 100vh);
+}

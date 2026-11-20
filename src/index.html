@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Konayuki</title>
+  <meta name="theme-color" content="#5380D6">
+  <link rel="preload" href="frames/manifest.js" as="script">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700&display=swap">
+  <link rel="stylesheet" href="css/daycycle.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <canvas id="sky" aria-hidden="true"></canvas>
+  <main id="day" data-start-hour="18"></main>
+
+  <section id="profile" class="profile" aria-roledescription="carousel" aria-label="Profile">
+    <div class="profile-cards" aria-live="polite">
+
+      <article class="card is-active" aria-roledescription="slide" aria-label="1 / 5">
+        <h1 class="card-hello">Hello, I'm <b>Konayuki</b>!</h1>
+        <p class="card-lead">Software Developer, Gamer</p>
+      </article>
+
+      <article class="card" aria-roledescription="slide" aria-label="2 / 5">
+        <h2 class="card-label">- Socials</h2>
+        <dl class="card-rows">
+          <div>
+            <dt>X</dt>
+            <dd><a href="https://x.com/Ko7ayuki" target="_blank">@Ko7ayuki</a></dd>
+          </div>
+          <div>
+            <dt>Discord</dt>
+            <dd>@Konayukiw</dd>
+          </div>
+          <div>
+            <dt>Telegram</dt>
+            <dd><a href="https://t.me/Konayukiw" target="_blank">@Konayukiw</a></dd>
+          </div>
+        </dl>
+      </article>
+
+      <article class="card" aria-roledescription="slide" aria-label="3 / 5">
+        <h2 class="card-label">- Projects</h2>
+        <h3 class="card-name"><a href="https://github.com/Ko7ayuki/Flect" target="_blank">Flect</a></h3>
+        <p class="card-text">Right-click any file or folder in Windows Explorer to convert, compress, resize, OCR and more.</p>
+        <p class="card-meta">C# · Windows 10 / 11 · Free · Apache-2.0</p>
+        <p class="card-links">
+          <a href="https://flect.konayuki.xyz/" target="_blank">Website</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://github.com/Ko7ayuki/Flect/releases/latest" target="_blank">Download</a>
+        </p>
+      </article>
+
+      <article class="card" aria-roledescription="slide" aria-label="4 / 5">
+        <h2 class="card-label">- Interests</h2>
+        <dl class="card-rows">
+          <div>
+            <dt>Languages</dt>
+            <dd>C# · Java · Rust</dd>
+          </div>
+          <div>
+            <dt>Games</dt>
+            <dd>原神</dd>
+          </div>
+          <div>
+            <dt>LLM</dt>
+            <dd>Grok · badtheorylabs</dd>
+          </div>
+        </dl>
+      </article>
+
+      <article class="card" aria-roledescription="slide" aria-label="5 / 5">
+        <h2 class="card-label">- Favorites</h2>
+        <ol class="card-songs">
+          <li><a href="https://www.youtube.com/watch?v=7SXeQ_34l2Q" target="_blank">Angel Wing</a><span>Sugar Goose</span></li>
+          <li><a href="https://www.youtube.com/watch?v=QsSKENQcBHo" target="_blank">Life</a><span>Sugar Goose</span></li>
+          <li><a href="https://www.youtube.com/watch?v=o3WlSH3_U10" target="_blank">for you...</a><span>Lil Yeek</span></li>
+          <li><a href="https://www.youtube.com/watch?v=VerIQQtPGUM" target="_blank">Anxious Love</a><span>999dobby</span></li>
+        </ol>
+        <p class="card-links">
+          <a href="https://music.apple.com/jp/playlist/chill/pl.u-kv9l2jLsJMpKlM6" target="_blank"
+           >Playlist</a>
+        </p>
+      </article>
+
+    </div>
+
+    <nav class="profile-nav" aria-label="Card Navigation">
+      <button type="button" class="profile-btn" data-step="-1" aria-label="Prev">
+        <svg viewBox="0 0 16 16" aria-hidden="true">
+          <path d="M10.5 2.5 5 8l5.5 5.5" />
+        </svg>
+      </button>
+      <span class="profile-count"><span data-current>1</span> / <span data-total>5</span></span>
+      <button type="button" class="profile-btn" data-step="1" aria-label="Next">
+        <svg viewBox="0 0 16 16" aria-hidden="true">
+          <path d="M5.5 2.5 11 8l-5.5 5.5" />
+        </svg>
+      </button>
+    </nav>
+  </section>
+
+  <script src="frames/manifest.js"></script>
+  <script src="js/daycycle.js"></script>
+  <script src="js/profile.js" defer></script>
+</body>
+
+</html>
